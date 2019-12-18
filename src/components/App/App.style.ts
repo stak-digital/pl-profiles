@@ -35,3 +35,38 @@ export const Card = styled.div`
 		}
 	}
 `;
+
+export const Layout = styled.div`
+	padding: 0 ${gutterWidth} ${gutterWidth};
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: ${gutterWidth};
+	margin-top: -${gutterWidth};
+`;
+
+export const StyledHeader = styled.header`
+	padding: 0 ${gutterWidth};
+	background-color: #673ab7;
+	color: white;
+	height: 130px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+`;
+
+export const Links = styled.div`
+	a {
+		color: white;
+		margin-right: 15px;
+		font-size: 2rem;
+
+		&:last-of-type {
+			margin: 0;
+		}
+	}
+`;
+
+export const StyledFooter = styled.footer`
+	padding: 0 ${gutterWidth};
+	color: #111;
+`;

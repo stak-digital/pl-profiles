@@ -1,7 +1,7 @@
 export const lifts = {
-	deadlift: 200,
-	bench: 200,
-	squat: 200
+	deadlift: 235,
+	bench: 120,
+	squat: 220
 };
 
 export const bodyWeight = 130;
