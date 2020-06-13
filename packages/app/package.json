@@ -16,6 +16,7 @@
 		"start": "yarn dev",
 		"serve": "next start",
 		"build": "next build",
+		"export": "yarn run build && next export",
 		"test": "jest"
 	},
 	"eslintConfig": {

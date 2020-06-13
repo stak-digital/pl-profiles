@@ -1,17 +1,20 @@
 import * as React from 'react';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
-import dynamic from 'next/dynamic';
+import Document, {
+	Html,
+	Head,
+	Main,
+	NextScript,
+	DocumentContext,
+} from 'next/document';
 
 if (typeof window !== 'undefined') {
-	dynamic(() =>
-		import('../serviceWorker').then((register) => {
-			(register as any)();
-		})
-	);
+	import('../serviceWorker').then((register) => {
+		(register as any)();
+	});
 }
 
 export class MainDocument extends Document {
-	static async getInitialProps(ctx) {
+	static async getInitialProps(ctx: DocumentContext) {
 		const initialProps = await Document.getInitialProps(ctx);
 		return { ...initialProps };
 	}
