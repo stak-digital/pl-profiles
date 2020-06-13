@@ -7,4 +7,6 @@ import './index.css';
 
 ReactDOM.render(React.createElement(App), document.getElementById('root'));
 
-serviceWorker.register();
+if (typeof window !== 'undefined') {
+	serviceWorker.register();
+}
