@@ -2,7 +2,7 @@ import React from 'react';
 import { FaInstagram, FaYoutubeSquare } from 'react-icons/fa';
 import { bodyWeight, lifts } from '../../data';
 import { calculateWilks, getTotalFromLifts } from '../../utils';
-import { Card, StyledFooter, Layout, Links, StyledHeader } from './App.style';
+import { Card, StyledFooter, Layout, Links, StyledHeader } from './style';
 
 type Services = 'instagram' | 'youtube';
 
@@ -14,12 +14,12 @@ interface ILink {
 const links: ILink[] = [
 	{
 		serviceName: 'instagram',
-		href: '#'
+		href: '#',
 	},
 	{
 		serviceName: 'youtube',
-		href: '#'
-	}
+		href: '#',
+	},
 ];
 
 function getLogo(serviceName: Services): React.ReactElement | null {
@@ -36,7 +36,7 @@ function getLogo(serviceName: Services): React.ReactElement | null {
 const data = [
 	{ name: 'Bench', value: lifts.bench },
 	{ name: 'Squat', value: lifts.squat },
-	{ name: 'Deadlift', value: lifts.deadlift }
+	{ name: 'Deadlift', value: lifts.deadlift },
 ];
 
 const COLORS = ['#0088FE', '#00C49F', '#FF8042'];
@@ -48,7 +48,7 @@ export default class App extends React.Component {
 				<StyledHeader>
 					<h1>Luke Boyle's powerlifting profile</h1>
 					<Links>
-						{links.map(link => {
+						{links.map((link) => {
 							return (
 								<a href={link.href} rel="noreferrer noopener">
 									{getLogo(link.serviceName)}
