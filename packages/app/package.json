@@ -2,7 +2,7 @@
 	"name": "@pl-profiles/app",
 	"version": "1.0.0",
 	"repository": "git@github.com:3stacks/pl-profiles.git",
-	"author": "Luke Boyle <me@lukeboyle.com>",
+	"author": "Stak Digital <oss@stak.digital>",
 	"license": "MIT",
 	"dependencies": {
 		"next": "^9.4.4",
@@ -36,6 +36,7 @@
 		"@types/react-dom": "^16.9.0",
 		"@types/react-icons": "^3.0.0",
 		"@types/styled-components": "^5.1.0",
+		"babel-plugin-styled-components": "^1.10.7",
 		"customize-cra": "^1.0.0",
 		"typescript": "~3.7.2"
 	}

@@ -1,6 +1,5 @@
-import React from 'react';
-import App from '../components/App';
+import * as React from 'react';
 
 export default function Index() {
-	return <App />;
+	return <div>Home</div>;
 }

@@ -9,7 +9,8 @@ export const Card = styled.div`
 		0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 
 	h2 {
-		font-size: 1rem;
+		font-size: 1.1rem;
+		font-weight: normal;
 		margin: 0;
 	}
 
@@ -24,8 +25,8 @@ export const Card = styled.div`
 		margin: 0;
 
 		dt {
-			font-size: 1rem;
-			font-weight: bold;
+			font-size: 1.1rem;
+			font-weight: normal;
 		}
 
 		dd {
