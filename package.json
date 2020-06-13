@@ -2,9 +2,7 @@
   "name": "pl-profiles",
   "private": true,
   "workspaces": [
-    "app",
-    "services",
-    "www"
+    "packages/*"
   ],
   "version": "1.0.0",
   "main": "index.js",
