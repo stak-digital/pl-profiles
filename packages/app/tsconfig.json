@@ -1,4 +1,5 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -17,14 +18,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
-    "baseUrl": ".",
-    "paths": {
-      "@quickboards/types/*": ["../types/*"],
-      "@quickboards/utils/*": ["../utils/*"]
-    }
+    "jsx": "react"
   },
   "include": [
-    "src"
+    "src",
+    "../types/types",
+    "../types/utils"
   ]
 }

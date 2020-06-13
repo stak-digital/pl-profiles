@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pl-profiles/types/*": ["types/*"],
+      "@pl-profiles/utils/*": ["utils/*"]
+    }
+  }
+}
