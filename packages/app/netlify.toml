@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "http://pl-profiles.com/*"
+  to = "https://pl-profiles.com/*"
+  status = 301
+  force = true
