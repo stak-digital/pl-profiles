@@ -1,5 +1,12 @@
 import * as React from 'react';
+import { useRouter } from 'next/router';
+import App from '../../components/App';
 
-export const ProfileRoot = () => <div>Profile home</div>;
+const Post = () => {
+	const router = useRouter();
+	const { pid } = router.queryString;
 
-export default ProfileRoot;
+	return <App />;
+};
+
+export default Post;
