@@ -10,12 +10,14 @@
 	"author": "Luke Boyle <me@lukeboyle.com>",
 	"license": "MIT",
 	"scripts": {
-		"build:all": "",
-		"build:app": "",
+		"build:all": "yarn run build:app && yarn run build:services",
+		"build:app": "yarn workspace @pl-profiles/app export",
 		"build:services": "yarn workspace @pl-profiles/services build"
 	},
 	"dependencies": {
 		"prettier": "^2.0.5"
 	},
-	"devDependencies": {}
+	"devDependencies": {
+		"concurrently": "^5.2.0"
+	}
 }

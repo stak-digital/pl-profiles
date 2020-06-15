@@ -14,7 +14,7 @@
 	},
 	"scripts": {
 		"dev": "next",
-		"start": "netlify dev",
+		"start": "next dev",
 		"serve": "next start",
 		"build": "next build",
 		"export": "yarn run build && next export",
