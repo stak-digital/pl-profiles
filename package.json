@@ -1,15 +1,21 @@
 {
-  "name": "pl-profiles",
-  "private": true,
-  "workspaces": [
-    "packages/*"
-  ],
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:stak-digital/pl-profiles.git",
-  "author": "Luke Boyle <me@lukeboyle.com>",
-  "license": "MIT",
-  "dependencies": {
-    "prettier": "^2.0.5"
-  }
+	"name": "pl-profiles",
+	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:stak-digital/pl-profiles.git",
+	"author": "Luke Boyle <me@lukeboyle.com>",
+	"license": "MIT",
+	"scripts": {
+		"build:all": "",
+		"build:app": "",
+		"build:services": "yarn workspace @pl-profiles/services build"
+	},
+	"dependencies": {
+		"prettier": "^2.0.5"
+	},
+	"devDependencies": {}
 }

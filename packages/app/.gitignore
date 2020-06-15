@@ -1,2 +1,5 @@
 .next
 out
+# Local Netlify folder
+.netlify/**/*
+!.netlify/state.json

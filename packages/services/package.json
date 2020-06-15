@@ -2,20 +2,15 @@
 	"name": "@pl-profiles/services",
 	"version": "1.0.0",
 	"scripts": {
-		"lambda-serve": "netlify-lambda serve src",
-		"lambda-build": "netlify-lambda build src",
-		"build": "NODE_ENV=production webpack && yarn run lambda-build",
-		"start": "NODE_ENV=development concurrently \"webpack-dev-server --content-base src/\" \"yarn run lambda-serve\""
+		"build": "NODE_ENV=production netlify-lambda build src",
+		"start": "NODE_ENV=development netlify dev"
 	},
 	"dependencies": {
 		"netlify-lambda": "^1.6.3"
 	},
 	"devDependencies": {
 		"@babel/preset-typescript": "^7.10.1",
-		"concurrently": "^5.2.0",
 		"dotenv": "^8.2.0",
-		"webpack": "^4.43.0",
-		"webpack-cli": "^3.3.11",
-		"webpack-dev-server": "^3.11.0"
+		"netlify-cli": "^2.53.0"
 	}
 }
