@@ -1,0 +1,5 @@
+[build]
+  base = "."
+  publish = "./packages/app/out"
+  functions = "./packages/services/lambda"
+  command = "yarn run build:all"
